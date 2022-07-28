@@ -52,9 +52,3 @@ func main() {
 	checkErr(err)
 	fmt.Println("delete affect => ", affect)
 }
-
-func checkErr(err error) {
-	if err != nil {
-		panic(err)
-	}
-}

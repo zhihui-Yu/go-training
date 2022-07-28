@@ -20,7 +20,7 @@ func main() {
 	}
 	defer session.Close()
 
-	// Optional. Switch the session to a monotonic behavior.
+	// Optional. Switch the normal-methods to a monotonic behavior.
 	session.SetMode(mgo.Monotonic, true)
 
 	c := session.DB("test").C("people")
